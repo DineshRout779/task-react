@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import Blogs from './pages/Blogs.jsx';
 import Register from './pages/Register.jsx';
 import AppContextProvider from './context/AppContext.jsx';
+import BlogDetailed from './pages/BlogDetailed.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: 'blogs',
         element: <Blogs />,
+      },
+      {
+        path: 'blogs/:id',
+        element: <BlogDetailed />,
       },
     ],
   },
